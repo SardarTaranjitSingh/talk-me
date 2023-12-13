@@ -4,7 +4,7 @@
 }
 
 
-
+body {}
 
 .chat_wrrpr{
   /* position: fixed; */
@@ -16,6 +16,10 @@
   /* box-shadow: 0 0 5px 0 #bfdbfe; */
   /* background: #fff; */
   /* border-radius: 8px; */
+  
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -104,6 +108,7 @@
 .chat_body_dv .other_mesage .message p{}
 .chat_body_dv .other_mesage .message a{
   color: #2563eb;
+  text-decoration: underline;
 }
 
 .chat_body_dv .my_mesage{
@@ -118,6 +123,7 @@
 .chat_body_dv .my_mesage .message p{}
 .chat_body_dv .my_mesage .message a{
   color: #fff;
+  text-decoration: underline;
 }
 
 .chat_body_dv .time_mesage{

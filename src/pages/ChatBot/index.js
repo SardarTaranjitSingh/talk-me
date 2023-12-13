@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import '../../assets/css/chat-bot.css'
-import DemoChatData from "../../data/demoChatData.json";
+import DemoChatData from "../../const/demoChatData.json";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
