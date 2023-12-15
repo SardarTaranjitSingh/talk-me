@@ -32,8 +32,8 @@ function addStyleTag() {
 
 // eslint-disable-next-line no-unused-vars
 function ChatBot(e) {
-  var base_url = 'https://talk-me-chat.netlify.app/chat-widget';
-  // var base_url = 'http://localhost:3000/chat-widget';
+  // var base_url = 'https://talk-me-chat.netlify.app/chat-widget';
+  var base_url = 'http://localhost:3000/chat-widget';
   var token = e ? e.token : null;
 
   addMetaTag();

@@ -19,7 +19,7 @@ export default () => {
       <header id="header" className="fixed-top d-flex align-items-center header-transparent header-scrolled">
         <div className="container d-flex align-items-center justify-content-between">
           <div className="logo">
-            <h1><span> Talk <span className="txt-green">Me</span> </span> </h1>
+            <h1><span> Talk <span className="txt-primary">Me</span> </span> </h1>
           </div>
           <nav id="navbar" className="navbar">
             <ul>
@@ -27,7 +27,6 @@ export default () => {
               <li> <a className="nav-link scrollto" href="#about">About</a> </li>
               <li> <a className="nav-link scrollto" href="#technologies">Technologies</a> </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
         </div>
       </header>
@@ -36,13 +35,13 @@ export default () => {
 
 
 
-      <section id="hero">
+      <section id="hero" style={{backgroundImage:'url(/assets/images/lets-talk-bg.png)'}}>
         <div className="container">
           <div className="row justify-content-center text-center">
 
             <div className="col-lg-7 pt-5 pt-lg-0 d-flex align-items-center content_align_middle">
               <div style={{ zIndex: 1 }}>
-                <h1><span>Talk<span className="txt-green">Me</span></span> IS A LIVE CHAT APP FOR YOUR WEBSITE<br /></h1>
+                <h1><span>Talk<span className="txt-primary">Me</span></span> IS A LIVE CHAT APP FOR YOUR WEBSITE<br /></h1>
                 <h2>Collaborate & Assign Conversations</h2>
                 <div className="text-center content_align_middle">
                   <a href="https://talk-me-chat.netlify.app/chatbot" className="btn-question scrollto fw-bold animated mob_mt_20" rel='noreferrer' target='_blank'>TAKE A LIVE DEMO</a>
@@ -68,10 +67,12 @@ export default () => {
         <section id="about" className="about">
           <div className="container">
             <div className="row">
-              <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"></div>
+              <div className="col-xl-5 col-lg-6 image-box d-flex justify-content-center align-items-stretch">
+                <img src="/assets/images/about.jpg" alt="" />
+              </div>
               <div
                 className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                <h3 className="text-uppercase">Talk<span style={{ color: '#2dbb54' }}>Me</span> - About</h3>
+                <h3 className="text-uppercase">Talk<span className='txt-primary'>Me</span> - About</h3>
                 <p>An open-source live chat software designed for seamless communication with website visitors. Engage in real-time conversations to enhance user experience and address queries promptly. With TalkMe, foster instant connections and provide personalized assistance on your website.</p>
 
                 <div className="icon-box">
@@ -103,7 +104,7 @@ export default () => {
           <div className="container">
             <div className="section-title">
               <h2>Our App Technologies</h2>
-              <p>Talk<span style={{ color: '#2dbb54' }}>Me</span> Technical Stack</p>
+              <p>Talk<span className='txt-primary'>Me</span> Technical Stack</p>
             </div>
             <div className="row">
 
