@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TalkMe - Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <script src="https://talk-me-chat.netlify.app/chatbot/widget.js"></script>
+
+  <div class="container">
+    <div class="row">
+      <div class="text_dv">
+        <h3>How to use TalkMe?</h3>
+        <p>Please incorporate the following script into your HTML code. Utilize a demo token to activate the chat
+          functionality.</p>
+        <ul>
+          <li
+            title="Copy 0123TempToken456 To Clipboard"
+            onclick="copyToClipboard('0123TempToken456')"
+          >
+            <p>0123TempToken456</p>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="3" d="M20 14h-4v40h20l12-12V14h-4"></path>
+                <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="3" d="M36 54V42h12"></path>
+                <path data-name="layer1" d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9" fill="none" stroke-miterlimit="10" stroke-width="3"></path>
+                <path data-name="layer1" d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none" stroke-miterlimit="10" stroke-width="3"></path>
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="code_dv">
+        <span
+          title="Copy Script To Clipboard"
+          onclick='copyToClipboard(`<script src="https://talk-me-chat.netlify.app/chatbot/widget.js"></script>\n<script> // Initiliaze the chat \n ChatBot({\n token: "bogus_token"\n})\n</script>`)'
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="3" d="M20 14h-4v40h20l12-12V14h-4"></path>
+            <path data-name="layer2" fill="none" stroke-miterlimit="10" stroke-width="3" d="M36 54V42h12"></path>
+            <path data-name="layer1" d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9" fill="none" stroke-miterlimit="10" stroke-width="3"></path>
+            <path data-name="layer1" d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none" stroke-miterlimit="10" stroke-width="3"></path>
+          </svg>
+        </span>
+        <code>&lt;script src=&quot;https://talk-me-chat.netlify.app/chatbot/widget.js&quot;&gt;&lt;/script&gt;</code>
+        <code>&lt;script&gt;</code>
+        <code>
+          <code>// Initiliaze the chat</code>
+        <code>ChatBot({</code>
+        <code>
+          <code>token: "bogus_token"</code>
+        </code>
+        <code>})</code>
+        </code>
+        <code>&lt;/script&gt;</code>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+    }
+  </script>
+  <script src="https://talk-me-chat.netlify.app/talkme.js"></script>
+  <!-- <script src="http://localhost:3000/talkme.js"></script> -->
   <script>
     // Initiliaze the chat
     ChatBot({
-      token: '0123TempToken456'
+      token: "0123TempToken456"
     })
   </script>
 </body>
+
 </html>
