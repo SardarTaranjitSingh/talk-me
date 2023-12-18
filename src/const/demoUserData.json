@@ -1,0 +1,28 @@
+[
+  {
+    "user_token": "0123TempToken456",
+    "chatbot_name": "Tempest Katheryn",
+    "bot_image": "user1.jpg",
+    "chat_status" : true,
+    "all_chat": []
+  },
+  {
+    "user_token": "456TempToken789",
+    "chatbot_name": "Kaylan Jeb",
+    "bot_image": "user2.jpg",
+    "chat_status" : false,
+    "all_chat": []
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+]

@@ -1,10 +1,13 @@
 import './assets/css/global.css';
 import MyRoutes from './MyRoutes';
+import { MyProvider } from './provider/myContext';
 
 function App() {
   return (
     <>
-      <MyRoutes />
+      <MyProvider>
+        <MyRoutes />
+      </MyProvider>
     </>
   );
 }
