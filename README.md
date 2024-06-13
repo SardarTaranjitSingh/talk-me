@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# TalkMe Live Chat Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TalkMe is a live chat app designed for seamless communication with website visitors. This guide will help you integrate TalkMe into your website to engage in real-time conversations and provide personalized assistance to your users.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+You can view the live demo of the project [here](https://day-night-switch-button.netlify.app).
 
-### `npm start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Day Night Switch Button](https://raw.githubusercontent.com/SardarTaranjitSingh/talk-me/main/public/assets/images/screenshot.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use TalkMe
 
-### `npm test`
+### Step 1: Add the Script to Your HTML
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Incorporate the following script into your HTML code to activate the TalkMe chat functionality using a demo token.
 
-### `npm run build`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkMe Integration</title>
+</head>
+<body>
+    <!-- Your website content -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    <!-- TalkMe Chat Integration -->
+    <script src="https://talk-me-chat.netlify.app/chatbot/widget.js"></script>
+    <script>
+        // Initialize the chat
+        ChatBot({
+            token: "a2c8e1g0i7k6m5o4q3s2u8y9,b7d0f1h2j3l4n5p6r7t8v9x0z1"
+        })
+    </script>
+</body>
+</html>
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Step 1: Customize the Token
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Replace the token in the script with your own if provided. The above example uses a demo token: `a2c8e1g0i7k6m5o4q3s2u8y9`,`b7d0f1h2j3l4n5p6r7t8v9x0z1`.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Real-time Conversation: Engage with your website visitors in real-time. The chat bot responds quickly to user inputs, creating a smooth and dynamic exchange similar to human conversation.
+- Effortless Integration: Simply add our user-friendly script to your website, and TalkMe will be up and running in no time, facilitating instant, real-time engagement with visitors.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+- CSS
+- React
+- JavaScript
